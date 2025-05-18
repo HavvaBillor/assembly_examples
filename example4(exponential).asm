@@ -15,7 +15,7 @@ main:
 
     addi $v0, $zero, 5
     syscall
-    add $t0, $v0, $zero   # Taban sayýyý $t0'a al
+    add $t0, $v0, $zero   # Taban sayÃ½yÃ½ $t0'a al
 
     
     la $a0, msg2
@@ -46,18 +46,12 @@ main:
 exponential:
     
     beq $t1, $zero, base_case
-
-    
     addi $t3, $zero, 1  
 
 loop:
     
     mul $t3, $t3, $t0
-
-    
     addi $t1, $t1, -1
-
-    
     bne $t1, $zero, loop
 
     
